@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hydeenoble.alat.IdentificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:paddingRight="40dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="30dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:id="@+id/imageTo"
+                android:background="@drawable/solid_rounded_bg"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/fingerprint"
+                />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_bg"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/document_white" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="2dp"
+            android:background="@android:color/white"
+            android:layout_weight="1"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_bg"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/locked_white"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="40dp"
+           android:weightSum="10">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Identification"
+                   android:textSize="24sp"
+                   android:textColor="@color/colorCranBerry"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Skip BVN"
+                   android:textSize="14sp"
+                   android:textColor="@color/colorGray"
+                   android:layout_centerInParent="true"
+                   android:layout_alignParentRight="true"/>
+           </RelativeLayout>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorWhite"
+               android:hint="Enter your 14 digit BVN"
+               android:backgroundTint="@color/colorCranBerry"
+               android:textColorHint="@color/colorGray"
+               android:layout_marginTop="40dp"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorWhite"
+               android:hint="Select your date of Birth"
+               android:backgroundTint="@color/colorCranBerry"
+               android:layout_weight="1"
+               android:textColorHint="@color/colorGray"
+               android:layout_marginTop="32dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorCranBerry"
+               android:text="I can't remember my BVN"
+               android:layout_marginTop="40dp"
+               android:textSize="14sp"/>
+
+           <Button
+               android:id="@+id/next"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Next"
+               android:layout_gravity="center"
+               android:backgroundTint="@color/colorCranBerry"
+               android:background="@drawable/rounded_corners"
+               android:textColor="@color/colorWhite"
+               android:textSize="16sp"
+               android:padding="20dp"
+               android:layout_marginBottom="20dp"
+               android:textAllCaps="false"
+               android:layout_marginTop="30dp"/>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+    
+</LinearLayout>
