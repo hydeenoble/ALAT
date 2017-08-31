@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ALAT</string>
+
+    <string name="question_prompt">Choose Security Question</string>
+
+    <string-array name="question_arrays">
+        <item>Choose Security Question</item>
+        <item>What\'s your name?</item>
+    </string-array>
+
 </resources>
