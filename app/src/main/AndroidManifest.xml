@@ -12,11 +12,13 @@
         <activity
             android:name=".LaunchActivity"
             android:theme="@style/LaunchTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             <!--<intent-filter>-->
+             <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+             <!--<category android:name="android.intent.category.LAUNCHER" />-->
+             <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".SplashScreenActivity"
@@ -30,12 +32,35 @@
         <activity
             android:name=".GetStarted"
             android:theme="@style/SplashTheme" />
-        <activity android:name=".IdentificationActivity"
-            android:theme="@style/AppThemeBase"/>
-        <activity android:name=".RegistrationActivity"
-            android:theme="@style/AppThemeBase"/>
-        <activity android:name=".AuthActivity"
-            android:theme="@style/AppThemeBase"></activity>
+        <activity
+            android:name=".IdentificationActivity"
+            android:theme="@style/AppThemeBase"
+            android:parentActivityName=".GetStarted"
+            android:label="" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/AppThemeBase"
+            android:parentActivityName=".IdentificationActivity"
+            android:label=""/>
+        <activity
+            android:name=".AuthActivity"
+            android:theme="@style/AppThemeBase"
+            android:parentActivityName=".RegistrationActivity"
+            android:label=""/>
+        <activity
+            android:name=".OnboardingActivity"
+            android:theme="@style/IntroTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

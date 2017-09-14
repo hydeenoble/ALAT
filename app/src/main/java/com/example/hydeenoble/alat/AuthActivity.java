@@ -14,8 +14,11 @@ public class AuthActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         FrameLayout register = (FrameLayout) findViewById(R.id.registration);
+        FrameLayout identification = (FrameLayout) findViewById(R.id.identification);
         FrameLayout login = (FrameLayout) findViewById(R.id.login);
         Button authLoginBtn = (Button) findViewById(R.id.auth_login);
 
@@ -27,10 +30,10 @@ public class AuthActivity extends AppCompatActivity {
             }
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
+        identification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AuthActivity.this, AuthActivity.class);
+                Intent intent = new Intent(AuthActivity.this, IdentificationActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +41,7 @@ public class AuthActivity extends AppCompatActivity {
         authLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AuthActivity.this, RegistrationActivity.class);
+                Intent intent = new Intent(AuthActivity.this, OnboardingActivity.class);
                 startActivity(intent);
             }
         });

@@ -14,6 +14,7 @@ public class IdentificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_identification);
         getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         FrameLayout register = (FrameLayout) findViewById(R.id.registration);
         FrameLayout login = (FrameLayout) findViewById(R.id.login);

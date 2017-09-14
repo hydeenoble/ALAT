@@ -15,6 +15,7 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         FrameLayout identification = (FrameLayout) findViewById(R.id.identification);

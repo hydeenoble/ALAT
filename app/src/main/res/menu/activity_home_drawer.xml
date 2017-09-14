@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_fund_account"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="Fund Account" />
+    <item
+            android:id="@+id/nav_tansfer_money"
+            android:icon="@drawable/ic_compare_arrows_black_24dp"
+            android:title="Transfer Money" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Make Payment" />
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@drawable/ic_filter_tilt_shift_black_24dp"
+            android:title="Goals" />
+
+        <item
+            android:id="@+id/nav_refer_friends"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Refer Friends" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+    <!--</group>-->
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

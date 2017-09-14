@@ -3,9 +3,34 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorScarlet">#c60020</color>
     <color name="colorCranBerry">#99003e</color>
     <color name="colorPurpleRed">#920043</color>
     <color name="colorGray">#4a4a4a</color>
+
+    <color name="screen1">#ffffff</color>
+    <color name="screen2">#ffffff</color>
+    <color name="screen3">#ffffff</color>
+
+    <color name="dot_active_screen1">#99003e</color>
+    <color name="dot_active_screen2">#99003e</color>
+    <color name="dot_active_screen3">#99003e</color>
+
+    <color name="dot_inactive_screen1">#aaa</color>
+    <color name="dot_inactive_screen2">#aaa</color>
+    <color name="dot_inactive_screen3">#aaa</color>
+
+    <array name="dot_active">
+        <item>@color/dot_active_screen1</item>
+        <item>@color/dot_active_screen2</item>
+        <item>@color/dot_active_screen3</item>
+    </array>
+
+    <array name="dot_inactive">
+        <item>@color/dot_inactive_screen1</item>
+        <item>@color/dot_inactive_screen2</item>
+        <item>@color/dot_inactive_screen3</item>
+    </array>
 </resources>
